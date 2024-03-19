@@ -1,0 +1,16 @@
+.social-container{
+    height: 40px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 7px ;
+    align-items: center;
+    background-color: azure;
+}
+.social-icons{
+    height: 21px;
+    width: 21px;
+    margin-right: 6px;
+}
+.social-container h6{
+    margin-right: 15px;
+}

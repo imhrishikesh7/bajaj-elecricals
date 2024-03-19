@@ -1,0 +1,37 @@
+h1{
+    font-size: 60px;
+    color: #0d68c9;
+
+}
+.board-container{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+.board-container .card-board{
+    width: 33%;
+    height: 500px;
+    margin: auto 30px;
+    background-color: #fff;
+    padding: 14px;
+    border-radius: 12px;
+    box-shadow: rgba(13, 104, 201, 0.3) 0px 8px 24px;
+
+    /* text-align: justify; */
+}
+.board-container .card-board img{
+    margin: 8px 0;
+}
+.designation{
+    margin: 0;
+}
+.board-container .card-board h6{
+ color: #0d68c9;
+ margin: 0;
+}
+.quote{
+    text-align: justify;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 22px;
+}

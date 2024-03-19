@@ -1,0 +1,46 @@
+.App {
+    text-align: center;
+  }
+    
+  .App-link {
+    color: #61dafb;
+  }
+  
+  .App-main {
+    width: 100%;
+    padding: 50px 10% 50px 10%;
+    margin: 0 auto;
+    background: #FC466B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .App-main h1 {
+    font-size: 60px;
+    color: #fff;
+}
+  .App-main h5 {
+    /* font-size: 60px; */
+    color: white;
+    /* text-stroke: 2px white;   */
+    /* -webkit-text-stroke: 1px white; */
+}
+.App-main a {
+    text-decoration: none;
+}
+.App-main img {
+    width: 15px;
+    display: inline-block;
+}
+  
+  .App-section {
+    max-width: calc(80% - 50px);
+    /* width: 0%; */
+    margin: 30px auto 30px auto;
+    padding: 50px;
+    background-color: #fff;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
