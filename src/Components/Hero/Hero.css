@@ -1,0 +1,108 @@
+.hero {
+    background-image: linear-gradient(90deg in oklab, #2B3DA1 , #005EAB);
+    width: 100%;
+    height: 150vh;
+    position: relative;
+}
+
+.hero .outline-svg {
+    position: absolute;
+    left: 0;
+}
+
+.hero .polygon-bg {
+    position: absolute;
+    left: 50%; /* Center the polygon background horizontally */
+    top: 10%;
+    transform: translateX(-50%); /* Adjust position to center horizontally */
+    width: 88%;
+    height: 90%;
+}
+
+.hero-content {
+    position: absolute;
+    z-index: 2;
+    width: 600px;
+    text-align: left;
+    /* border: 2px solid black; */
+    left: 35%; /* Center the hero content horizontally */
+    top: 51%; /* Center the hero content vertically */
+    transform: translate(-50%, -50%); /* Center the hero content both horizontally and vertically */
+}
+.hero-content p{
+    width: 450px;
+}
+.hero-content button{
+    background-color: #2B3DA1;
+    color: #fff;
+    border: none;
+    /* font-size: 0.8rem; */
+    padding: 15px 20px;
+    border-radius: 50px;
+    letter-spacing: 0.1cqmin;
+
+}
+.hero h1 {
+    font-size: 55px;
+}
+.hero-strip{
+    width: 430px;
+    /* border: 2px solid black; */
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-strip p{
+    /* border: 2px solid black; */
+    width: fit-content;
+    margin: 0;
+}
+.hero-strip p span{
+    font-weight: bold;
+}
+.appliances-img{
+    /* z-index: 2; */
+    position: absolute;
+    top: 30%;
+    right: 17%;
+    width: 43%;
+    height: 43%;
+}
+.green-square{
+    position: absolute;
+    top: 15%;
+    right: 0%   ;
+    width: 33%;
+    height: 33%;
+}
+.appliances2{
+    position: absolute;
+    top: 62%;
+    right: 4%;
+    width: 32%;
+    height: 32%;
+}
+.life-card{
+    position: absolute;
+    width: 260px;
+    height: 150px;
+    background-color: #F4F4F4;
+    border-radius: 18px;
+    align-items: center;
+    padding: 12px;
+    /* transform: translateX(-50%); */
+    /* margin: auto; */
+    /* transform: translateX(-50%, -50%); Center the hero content both horizontally and vertically */
+    top: 82%;
+    left: calc(50% - 10%);
+}
+.life-card img{
+    width: 140px;
+    height: 150px;
+}
+.life-card p{
+    text-align: left;
+    /* margin-left: 12px; */
+    margin: 0 0 0 12px;
+    line-height: 1.2;
+    font-size: 14px;
+}
