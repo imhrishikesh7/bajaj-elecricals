@@ -3,12 +3,14 @@ import Navbar from './Components/Navbar/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import 'bootstrap/dist/js/bootstrap.min.js'; // Import Bootstrap CSS
 import Hero from './Components/Hero/Hero';
+import About from './Components/About/About';
 
 function App() {
 
   return (
     <div className='App'>
       <Hero/>
+      <About/>
     </div>
   )
 }

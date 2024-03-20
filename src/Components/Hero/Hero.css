@@ -44,7 +44,27 @@
 }
 .hero h1 {
     font-size: 55px;
+
 }
+.span1 {
+    background-image: linear-gradient(90deg in oklab, #2B3DA1 , #005EAB);
+    color: #fff;
+    padding: 2px 4px; /* Adjust the padding to control the height of the background */
+    line-height: 1; 
+}
+.span3{
+    position: absolute;
+    background-image: linear-gradient(90deg in oklab, #2B3DA1 , #005EAB);
+    padding: 5px 20px;
+    color: #fff;
+    border-radius: 50px;
+    top: 80%;
+    font-size: 14px;
+    z-index: 2;
+    left: calc(50% - 12%);
+
+}
+
 .hero-strip{
     width: 430px;
     /* border: 2px solid black; */
@@ -105,4 +125,38 @@
     margin: 0 0 0 12px;
     line-height: 1.2;
     font-size: 14px;
+}
+.outer-p1{
+    color: #fff;
+    width: fit-content;
+    font-size: 12px;
+    position: absolute;
+    top: 15%;
+    left: calc(50% - 20%);
+
+}
+.outer-p2{
+    width: fit-content;
+    top: 21%;
+    position: absolute;
+    left: calc(50% - 43%);
+    color: #fff;
+    font-size: 12px;
+}
+.outer-p3{
+    width: fit-content;
+    position: absolute;
+    top: 80%;
+    left: calc(50% - 43%);
+    color: #fff;
+    font-size: 12px;
+}
+.outer-p4{
+    position: absolute;
+    top: 94%;
+    left: calc(50% - 33%);
+    color: #fff;
+    width: fit-content;
+
+    font-size: 12px;
 }
