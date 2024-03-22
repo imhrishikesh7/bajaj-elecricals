@@ -1,11 +1,32 @@
 .navbar {
     position: relative;
+    margin: auto;
     padding: 12px 0;
     height: 80px;
     z-index: 2;
+    /* width: 90%; */
     background-color: transparent;
+    transition: background-color 2s ease; /* Add transition effect for smooth color change */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center;
 }
 
+.navbar.scrolled {
+    background: linear-gradient(90deg, rgba(41,57,144,1) 41%, rgba(32,142,233,1) 100%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* Keep the same width and margin */
+    /* width: 90%; */
+    margin: auto;
+    /* border: 2px solid white; */
+    /* border-radius: 50px; */
+}
+
+/* .navbar-hero-container{
+    border: 2px solid white;
+    width: 90%;
+margin: 0;
+padding: 0;
+} */
 
 .navbar img {
     /* width: 200px; */
@@ -14,8 +35,11 @@
 
 
 .navbar .navbar-inner {
-    padding: 0 5%;
-    margin: 2% 0;
+    /* padding: 0 5%; */
+    /* margin: 2% auto; */
+    width: 90%;
+    justify-content: center;
+
 
 }
 
@@ -24,12 +48,12 @@
 
 }
 .ul1{
-    margin-left: 20%;
+    margin-left: 10%;
     width: 500px;
-
+    font-weight: 700;
 }
 
-.navbar .navbar-inner ul li {
+.navbar .navbar-inner ul li:not(.btn2 ) {
     /* width: 130px; */
     width: fit-content;
     height: 50px;
@@ -59,7 +83,9 @@
     /* border:  2px solid white; */
     width: 300px;
 }
-
+.btn1{
+    font-weight: 700;
+}
 
 .visible {
     display: block !important;
@@ -72,14 +98,23 @@
     z-index: 1000;
 }
 .btn2{ 
+    display: flex;
     background-color: #fff;
     border-radius: 30px;   
-    /* width: 180px; */
-    padding: 0 20px;
+    padding: 0px 10px;
+    height: 40px;
+    margin: auto;
+    /* line-height: 1.6; */
+    align-items: center;
+    justify-content: center;
 }
 
 .btn2 a{ 
+    /* border: 2px solid black; */
     color: #0d68c9;
     font-size: 0.8rem;
+    font-weight: bold;
     letter-spacing: 0.1cqmin;
+    margin: auto;
+    padding: 0;
 }

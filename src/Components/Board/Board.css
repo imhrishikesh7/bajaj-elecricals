@@ -1,37 +1,46 @@
-h1{
-    font-size: 60px;
-    color: #0d68c9;
-
-}
 .board-container{
+    margin-top: 50px;
+    height: 90vh;
     width: 100%;
-    height: 100vh;
+    background: linear-gradient(90deg, rgba(32,142,233,1) 41%, rgba(41,57,144,1) 100%);
+    align-items: center;
+    position: relative;
     justify-content: center;
 }
-.board-container .card-board{
-    width: 33%;
-    height: 500px;
-    margin: auto 30px;
-    background-color: #fff;
-    padding: 14px;
-    border-radius: 12px;
-    box-shadow: rgba(13, 104, 201, 0.3) 0px 8px 24px;
-
-    /* text-align: justify; */
+.board-wrapper{
+    width: fit-content;
 }
-.board-container .card-board img{
-    margin: 8px 0;
-}
-.designation{
-    margin: 0;
-}
-.board-container .card-board h6{
- color: #0d68c9;
- margin: 0;
-}
-.quote{
+.heading-bar-board{
+    /* color: #fff; */
+    
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
     text-align: justify;
-    width: 80%;
+}
+.board-heading{
+    color: #fff;
+}
+.heading-bar-board .board-heading2{
+    color: #fff;
     margin: 0 auto;
-    line-height: 22px;
+
+}
+.heading-bar-board h1{
+    font-weight: bold;
+    font-size: 60px;
+    margin: 0 auto;
+    color: #fff;
+}
+.bob-text{
+    color: #fff;
+    width: 550px;
+    font-size: 22px;
+    text-align: left;
+    margin: 30px 0 0 0;
+}
+.best-of-bajaj{
+    width: 50%;
+    height: 100%;
+    /* margin: auto; */
 }

@@ -20,7 +20,7 @@ const Navbar = () => {
     return (
         <div className="navbar-hero-container">
             <div className={`navbar-margin ${isTop ? 'visible' : ''}`} />
-            <nav className={`navbar navbar-expand-lg  p-0 ${!isTop ? 'sticky-top' : ''}`}>
+            <nav className={`navbar navbar-expand-lg p-0 ${!isTop ? 'sticky-top scrolled' : ''}`}>
                 <div className="container-fluid navbar-inner ">
                     <a className="navbar-brand" href="/">
                         <img src="./logo.svg" alt="" />
@@ -50,12 +50,12 @@ const Navbar = () => {
                         </ul>
                         <ul className="navbar-nav inter-bold mb-2 mb-lg-0 ul2">
                             <li className="nav-item btn1">
-                            <a className="nav-link" href="/">
-                                    Store Loaction
+                                <a className="nav-link" href="/">
+                                    Store Locator
                                 </a>
                             </li>
                             <li className="nav-item btn2">
-                            <a className="nav-link" href="/">
+                                <a className="nav-link" href="/">
                                     Shop Now
                                 </a>
                             </li>
