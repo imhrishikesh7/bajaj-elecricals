@@ -44,7 +44,23 @@ const Board = ({ index }) => {
         </div>
         <p className='inter-medium bob-text'>Quis potenti egestas curabitur magnis scelerisque tempor semper rhoncus habitasse ultrices a phasellus eget vitae placerat tristique tincidunt ipsum aliquet amet massa cursus est vel eu etiam nascetur imperdiet feugiat integer condimentum porttitor letius augue pellentesque nam vulputate</p>
       </div>
-      <img className='best-of-bajaj' src="./best-of-bajaj.svg" alt="" />
+      <motion.img className='best-of-bajaj' src="./best-of-bajaj.svg" alt=""
+        initial={{
+          opacity: 0,
+          // if odd index card,slide from right instead of left
+          y: index % 2 === 0 ? -40 : 40
+      }}
+      whileInView={{
+          opacity: 1,
+          y: 0, // Slide in to its original position
+          transition: {
+              duration: 0.50, // Animation duration
+              delay: 0.20
+            }
+      }}
+
+       exit={{rotate:0}}
+      />
     </div>
   )
 }

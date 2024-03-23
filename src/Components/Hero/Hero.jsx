@@ -63,7 +63,9 @@ const Hero = ( { index } ) => {
 
             )}
             {showPolygonBg && (
+                <div className='polygon-bg-wrap'>
                 <img className='polygon-bg' src="./polygon-bg.svg" alt="" />
+                </div>
             )}
             {showPolygonBg && (
 
@@ -97,7 +99,7 @@ const Hero = ( { index } ) => {
             {/* <div className='appliances-slide'> */}
             {showPolygonBg && (
 
-                <Carousel fade className='appliances-slide animate' controls={false} interval={1000} style={{ zIndex: '1', overflow: 'hidden', width: '32%', height: '38%', borderRadius: '20px' }}>
+                <Carousel fade className='appliances-slide animate' controls={false} interval={1000} style={{ zIndex: '1', overflow: 'hidden',  borderRadius: '20px' }}>
                     {/* <img cl src="./bajaj-text-outline.svg" alt="" /> */}
                     <Carousel.Item>
                         <img src="./111.jpg" alt="" style={{ width: '100%', height: '100%', objectFit: 'contain', zIndex: '-1' }} />
