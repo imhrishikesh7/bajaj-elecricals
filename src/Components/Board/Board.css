@@ -7,6 +7,12 @@
     position: relative;
     justify-content: center;
 }
+.bajaj-logo-outline-mini{
+    position: absolute;
+    left: 0;
+    top: 10%;
+    height: 100%;
+}
 .board-wrapper{
     width: fit-content;
 }
@@ -24,11 +30,11 @@
 .heading-bar-board .board-heading2{
     color: #fff;
     margin: 0 auto;
-
+    font-size: 3em;
 }
 .heading-bar-board h1{
     font-weight: bold;
-    font-size: 60px;
+    font-size: 5em;
     margin: 0 auto;
     color: #fff;
 }

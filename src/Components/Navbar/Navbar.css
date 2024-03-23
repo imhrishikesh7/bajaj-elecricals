@@ -1,46 +1,64 @@
 .navbar {
-    position: relative;
-    margin: auto;
-    padding: 12px 0;
-    height: 80px;
-    z-index: 2;
-    /* width: 90%; */
+    position: fixed; /* Change from 'absolute' to 'fixed' */
+    top: 0; /* Stick the navbar to the top */
+    width: 100%; /* Ensure the navbar spans the entire width of the viewport */
+    z-index: 1000;
     background-color: transparent;
-    transition: background-color 2s ease; /* Add transition effect for smooth color change */
-    display: flex; /* Use flexbox for centering */
+    transition: background-color 2s ease;
+    display: flex;
     justify-content: center;
 }
+
+
+.nav-link {
+    text-decoration: none;
+    justify-content: center;
+    /* display: inline-block; */
+    position: relative;
+    /* opacity: 0.75; */
+  }
+  
+  .nav-link:hover {
+    opacity: 1;
+  }
+  
+  
+.nav-link::before {
+    transition: width 400ms; /* Only transition the width property */
+    width: 0; /* Initially set the width to 0 */
+    height: 2px;
+    content: "";
+    position: absolute;
+    bottom: 0; /* Align the underline to the bottom of the text */
+    bottom: 12px; /* Adjust the left positioning to center the underline */
+    background-color: #fff;
+  }
+  
+.nav-link:hover::before {
+    width: 90%; /* Set the width of the underline to 90% on hover */
+    bottom: 12px; /* Adjust the left positioning to keep the underline centered */
+  }
+  
+  .nav-link-ltr:hover::before {
+    width: 90%;
+  }
+  
+
 
 .navbar.scrolled {
     background: linear-gradient(90deg, rgba(41,57,144,1) 41%, rgba(32,142,233,1) 100%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    /* Keep the same width and margin */
-    /* width: 90%; */
     margin: auto;
-    /* border: 2px solid white; */
-    /* border-radius: 50px; */
 }
 
-/* .navbar-hero-container{
-    border: 2px solid white;
-    width: 90%;
-margin: 0;
-padding: 0;
-} */
-
 .navbar img {
-    /* width: 200px; */
     height: 60px;
 }
 
 
 .navbar .navbar-inner {
-    /* padding: 0 5%; */
-    /* margin: 2% auto; */
     width: 90%;
     justify-content: center;
-
-
 }
 
 .navbar .navbar-inner ul {
@@ -48,28 +66,20 @@ padding: 0;
 
 }
 .ul1{
-    margin-left: 10%;
-    width: 500px;
+    margin: 0 auto;
+    width: 600px;
     font-weight: 700;
 }
 
 .navbar .navbar-inner ul li:not(.btn2 ) {
     /* width: 130px; */
-    width: fit-content;
+    /* border: 2px solid white; */
+    /* width: fit-content; */
     height: 50px;
     margin: auto;
     line-height: 2.5;
     justify-content: center;
-    transition: background-color 0.3s ease-in;
 }
-
-/* .navbar .navbar-inner ul li:hover {
-    background-color: #0d68c9;
-} */
-
-/* .navbar .navbar-inner ul li:hover a {
-    color: #fff;
-} */
 
 .navbar .navbar-inner ul li a:not(.btn2 a) {
     font-size: 0.8rem;
@@ -77,10 +87,6 @@ padding: 0;
     letter-spacing: 0.1cqmin;
 }
 .navbar .navbar-inner .ul2 {
-    /* font-size: 0.8rem;
-    color: #fff;
-    letter-spacing: 0.1cqmin; */
-    /* border:  2px solid white; */
     width: 300px;
 }
 .btn1{
@@ -101,18 +107,26 @@ padding: 0;
     display: flex;
     background-color: #fff;
     border-radius: 30px;   
-    padding: 0px 10px;
+    padding: 0px 20px;
     height: 40px;
     margin: auto;
-    /* line-height: 1.6; */
     align-items: center;
     justify-content: center;
+    transition: background-color 0.4s ease-in-out;
+}
+.btn2:hover{ 
+    background-color: transparent;
+    border: 1.5px solid white;
+}
+.btn2:hover .nav-link2{ 
+    color: #fff;
 }
 
-.btn2 a{ 
-    /* border: 2px solid black; */
+
+.btn2 .nav-link2{ 
     color: #0d68c9;
     font-size: 0.8rem;
+    text-decoration: none;
     font-weight: bold;
     letter-spacing: 0.1cqmin;
     margin: auto;

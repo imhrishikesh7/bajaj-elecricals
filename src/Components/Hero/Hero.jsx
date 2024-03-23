@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react'
 import './Hero.css'
 import Navbar from '../Navbar/Navbar'
 import Carousel from 'react-bootstrap/Carousel';
+import { motion } from 'framer-motion'
 
-const Hero = () => {
+const Hero = ( { index } ) => {
     const [showPolygonBg, setShowPolygonBg] = useState(false);
     const [showStroke, setShowStroke] = useState(true);
     useEffect(() => {
@@ -25,8 +26,36 @@ const Hero = () => {
             </svg>
 
 
-            <p className='outer-p1 inter-medium'><strong>Fostering</strong> a sense of <strong>empowerment </strong>and collective action</p>
-            <p className='outer-p2 inter-medium'>Empower Your Health, Empower Your Life</p>
+            <motion.p className='outer-p1 inter-medium'
+                initial={{
+                    opacity: 0,
+                    // if odd index card,slide from right instead of left
+                    x: index % 2 === 0 ? 20 : -20
+                }}
+                whileInView={{
+                    opacity: 1,
+                    x: 0, // Slide in to its original position
+                    transition: {
+                        duration: 0.50 // Animation duration
+                    }
+                }}
+            >
+                <strong>Fostering</strong> a sense of <strong>empowerment </strong>and collective action</motion.p>
+            <motion.p className='outer-p2 inter-medium'
+            initial={{
+                opacity: 0,
+                // if odd index card,slide from right instead of left
+                x: index % 2 === 0 ? 20 : -20
+            }}
+            whileInView={{
+                opacity: 1,
+                x: 0, // Slide in to its original position
+                transition: {
+                    duration: 0.50 // Animation duration
+                }
+            }}
+            >
+                Empower Your Health, Empower Your Life</motion.p>
             {showStroke && (
                 <svg className='polygon-bg-stroke' width="100%" height="100%" viewBox="0 0 1242 720" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M191 589H23C10.8497 589 1 579.15 1 567V87.5C1 75.3497 10.8497 65.5 23 65.5H297.5C309.65 65.5 319.5 55.6503 319.5 43.5V23C319.5 10.8497 329.35 1 341.5 1H396.5H768H867C879.15 1 889 10.8497 889 23V43.5C889 55.6503 898.85 65.5 911 65.5H1219C1231.15 65.5 1241 75.3497 1241 87.5V448C1241 460.15 1231.15 470 1219 470H1053C1040.85 470 1031 479.85 1031 492V632C1031 644.15 1021.15 654 1009 654H948C935.85 654 926 663.85 926 676V697.5C926 709.65 916.15 719.5 904 719.5H341.5C329.35 719.5 319.5 709.65 319.5 697.5V676C319.5 663.85 309.65 654 297.5 654H235C222.85 654 213 644.15 213 632V611C213 598.85 203.15 589 191 589Z" stroke="white" class="svg-elem-1"></path>
@@ -39,8 +68,23 @@ const Hero = () => {
             {showPolygonBg && (
 
                 <div className='hero-content animate'>
-                    <h1 className='inter-medium'>Sustainable <br /> practices empow<span className='span1'>er</span>  <br /> joyful living</h1>
-                    <p>Leading with innovative products, sustainable practices, and impactful CSR initiatives, fostering happiness.</p>
+                    <motion.h1 className='inter-medium'
+                        initial={{
+                            opacity: 0,
+                            // if odd index card,slide from right instead of left
+                            x: index % 2 === 0 ? 20 : -20
+                        }}
+                        whileInView={{
+                            opacity: 1,
+                            x: 0, // Slide in to its original position
+                            transition: {
+                                duration: 0.50, // Animation duration
+                                delay: 0.40
+                            }
+                        }}
+                    >
+                        Sustainable <br /> practices empow<span className='span1'>er</span>  <br /> joyful living</motion.h1>
+                    <p className='inter-medium'>Leading with innovative products, sustainable practices, <br /> and impactful CSR initiatives, fostering happiness.</p>
                     <div className='hero-strip flex'>
                         <button className='inter-bold'>Know More</button>
                         <img src="./users.svg" alt="" />
@@ -53,7 +97,8 @@ const Hero = () => {
             {/* <div className='appliances-slide'> */}
             {showPolygonBg && (
 
-                <Carousel fade className='appliances-slide animate' controls={false} style={{ zIndex: '1', overflow: 'hidden', width: '400px', height: '360px', borderRadius: '20px' }}>
+                <Carousel fade className='appliances-slide animate' controls={false} interval={1000} style={{ zIndex: '1', overflow: 'hidden', width: '32%', height: '38%', borderRadius: '20px' }}>
+                    {/* <img cl src="./bajaj-text-outline.svg" alt="" /> */}
                     <Carousel.Item>
                         <img src="./111.jpg" alt="" style={{ width: '100%', height: '100%', objectFit: 'contain', zIndex: '-1' }} />
                     </Carousel.Item>
@@ -91,8 +136,36 @@ const Hero = () => {
                     </p>
                 </div>
             )}
-            <p className='outer-p3 inter-medium'>Track, Transform, Thrive</p>
-            <p className='outer-p4 inter-medium'> Chart Your Progress, Celebrate Your Success</p>
+            <motion.p className='outer-p3 inter-medium'
+            initial={{
+                opacity: 0,
+                // if odd index card,slide from right instead of left
+                x: index % 2 === 0 ? 20 : -20
+            }}
+            whileInView={{
+                opacity: 1,
+                x: 0, // Slide in to its original position
+                transition: {
+                    duration: 0.50 // Animation duration
+                }
+            }}
+            >
+                Track, Transform, Thrive</motion.p>
+            <motion.p className='outer-p4 inter-medium'
+            initial={{
+                opacity: 0,
+                // if odd index card,slide from right instead of left
+                x: index % 2 === 0 ? 20 : -20
+            }}
+            whileInView={{
+                opacity: 1,
+                x: 0, // Slide in to its original position
+                transition: {
+                    duration: 0.50 // Animation duration
+                }
+            }}
+            > 
+            Chart Your Progress, Celebrate Your Success</motion.p>
         </div>
     )
 }
