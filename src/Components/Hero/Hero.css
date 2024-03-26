@@ -135,22 +135,35 @@ svg .svg-elem-1{stroke-dashoffset:3767.999267578125px;stroke-dasharray:3767.9992
     display: none;
 }
 /* GREEN SQUARE */
-.green-square{
+.tilt-card{
     position: absolute;
     top: 0%;
-    left: 69%;
-    width: 42%;
-    height: 40%;
+    /* left: 74%; */
+    width: 26%;
+    right: -2%;
+    z-index: 1;
+}
+.green-square{
+    /* position: absolute; */
+    /* top: 0%; */
+    /* left: 69%; */
+    width: 100%;
+    height: 100%;
     z-index: 1;
 }
 
 /* APPLIANCES */
-.appliances2{
+.tilt-card2{
     position: absolute;
     top: 58%;
-    left: 63%;
+    left: 70%;
     width: 45%;
     height: 45%;
+    width: 26%;
+    z-index: 1;
+}
+.appliances2{
+    width: 100%;
     z-index: 1;
 }
 /* LIFE CARD */

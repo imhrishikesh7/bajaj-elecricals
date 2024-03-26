@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './Hero.css'
+import { Tilt } from 'react-tilt';
 import Navbar from '../Navbar/Navbar'
 import Carousel from 'react-bootstrap/Carousel';
 import { motion } from 'framer-motion'
@@ -125,9 +126,15 @@ const Hero = ({ index }) => {
                             <img src="./333.jpg" alt="" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                         </Carousel.Item>
                     </Carousel>
+                    
+                    <Tilt className="tilt-card" options={{scale: 1, speed: 2000, reverse: false, max: 20, easing: "ease-in-out"}}> 
+                    <img className='green-square animate'src="./green-square.svg" alt="" />
 
-                    <img className='green-square animate' src="./green-square.svg" alt="" />
+                    </Tilt>
+                    <Tilt className="tilt-card2" options={{scale: 1, speed: 2000, reverse: false, max: 20, easing: "ease-in-out"}}> 
                     <img className='appliances2 animate' src="./appliances2.svg" alt="" />
+                    </Tilt>
+
                
                     <div className='life-card flex animate'>
                     <span className='span3 inter-medium animate'>Life @ Bajaj</span>
