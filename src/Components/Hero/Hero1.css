@@ -18,7 +18,7 @@
     margin-left: auto;
     margin-right: auto;
     /* background: linear-gradient(90deg, rgba(41, 57, 144, 1) 41%, rgba(32, 142, 233, 1) 100%); */
-    background-image: url('./bg-box.jpg');
+    background-image: url('/bg-box.jpg');
     height: 75%;
     width: 98%;
     border-radius: 22px;
