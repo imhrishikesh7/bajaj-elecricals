@@ -55,7 +55,14 @@ const Business = ({ index }) => {
                 >
                     Bajaj Electricals excels in consumer appliances and lighting <br />solutions. Their business portfolio includes a wide range of <br />innovative products loved by consumers across India.</motion.p>
             </div>
-            <div className='flex business-row'>
+            <motion.div className='flex business-row'
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { duration: 0.5 }
+            }}
+            >
                 <div className='overlay-container'>
                     <img className='business-img' src="./business1.jpg" alt="" />
                     <motion.img className='consumer-icon' src="./consumer-blue.svg" alt="" 
@@ -87,13 +94,13 @@ const Business = ({ index }) => {
                         }
                     }}
                     >
-                        Consumer Products</motion.h3>
+                        Bajaj</motion.h3>
 
-                    <div class="overlay">
-                    <div class="overlay-text">
+                    <div className="overlay">
+                    <div className="overlay-text">
                             <img className='icon-mono' src="./appliances-mono.svg" alt="" />
-                            <h4 className='inter-bold'>Consumer Products</h4>
-                            <p className='inter-light'>Nirlep Appliances Private Limited introduced Non-Stick technology to India. Over 50 years, it has become the leading brand in Non-Stick cookware, known for quality and customer satisfaction.</p>
+                            <h4 className='inter-bold'>Bajaj</h4>
+                            <p className='inter-light'>Bajaj introduced Non-Stick technology to India. Over 50 years, it has become the leading brand in Non-Stick cookware, known for quality and customer satisfaction.</p>
                             <button className='flex ' >Learn more <img className='arrow-right' src="./arrow-right.svg" alt="" /></button>
                         </div>
                     </div>
@@ -131,8 +138,8 @@ const Business = ({ index }) => {
                     >
                         Nirlep</motion.h3>
 
-                    <div class="overlay">
-                    <div class="overlay-text">
+                    <div className="overlay">
+                    <div className="overlay-text">
                             <img className='icon-mono' src="./nirlep-mono.svg" alt="" />
                             <h4 className='inter-bold'>Nirlep</h4>
                             <p className='inter-light'>Nirlep Appliances Private Limited introduced Non-Stick technology to India. Over 50 years, it has become the leading brand in Non-Stick cookware, known for quality and customer satisfaction.</p>
@@ -140,8 +147,15 @@ const Business = ({ index }) => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className='flex business-row'>
+            </motion.div>
+            <motion.div className='flex business-row'
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { duration: 0.5 }
+            }}
+            >
                 <div className='overlay-container'>
                     <img className='business-img' src="./business3.jpg" alt="" />
                     <motion.img className='consumer-icon' src="./fan-blue.svg" alt="" 
@@ -175,8 +189,8 @@ const Business = ({ index }) => {
                     >
                         Nex</motion.h3>
                     
-                    <div class="overlay">
-                    <div class="overlay-text">
+                    <div className="overlay">
+                    <div className="overlay-text">
                             <img className='icon-mono' src="./fan-mono.svg" alt="" />
                             <h4 className='inter-bold'>Nex</h4>
                             <p className='inter-light'>Nirlep Appliances Private Limited introduced Non-Stick technology to India. Over 50 years, it has become the leading brand in Non-Stick cookware, known for quality and customer satisfaction.</p>
@@ -217,8 +231,8 @@ const Business = ({ index }) => {
                     >
                         MorphyRichards</motion.h3>
                    
-                    <div class="overlay">
-                        <div class="overlay-text">
+                    <div className="overlay">
+                        <div className="overlay-text">
                             <img className='icon-mono' src="./morphy-mono.svg" alt="" />
                             <h4 className='inter-bold'>MorphyRichards</h4>
                             <p className='inter-light'>Nirlep Appliances Private Limited introduced Non-Stick technology to India. Over 50 years, it has become the leading brand in Non-Stick cookware, known for quality and customer satisfaction.</p>
@@ -226,8 +240,15 @@ const Business = ({ index }) => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className='flex business-row'>
+            </motion.div>
+            <motion.div className='flex business-row'
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { duration: 0.5 }
+            }}
+            >
                 <div className='overlay-container5'>
                     <img className='business-img' src="./business5.jpg" alt="" />
                     <motion.img className='consumer-icon' src="./lamp-blue.svg" alt=""
@@ -261,8 +282,8 @@ const Business = ({ index }) => {
                     >
                         Lightning Solutions</motion.h3>
                     
-                    <div class="overlay5">
-                    <div class="overlay-text">
+                    <div className="overlay5">
+                    <div className="overlay-text">
                             <img className='icon-mono' src="./lamp-mono.svg" alt="" />
                             <h4 className='inter-bold'>Lightning Solutions</h4>
                             <p className='inter-light'></p>
@@ -271,7 +292,7 @@ const Business = ({ index }) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }

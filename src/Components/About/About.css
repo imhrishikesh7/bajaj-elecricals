@@ -43,14 +43,44 @@
     /* height: 20%; */
     border-radius: 30px; /* Apply border radius to the entire image */
 }
-.cta-arrow{
+.cta-arrow {
     position: absolute;
     z-index: 2;
     top: 4%;
     right: 2%;
     width: 10%;
-    /* top: 0; */
+    cursor: pointer;
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
 }
+
+.cta-arrow-hover {
+    opacity: 0; /* Initially hide the hover image */
+    position: absolute;
+    z-index: 1; /* Ensure hover image is behind the regular arrow */
+    top: 4%;
+    right: 2%;
+    width: 10%;
+    cursor: pointer;
+    pointer-events: none; /* Prevent hover events on the hover image */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.arrow-container {
+
+    position: absolute; /* Ensure proper positioning of arrow images */
+    width: 100%; /* Ensure the container spans the entire width of its parent */
+    height: 100%; /* Ensure the container spans the entire height of its parent */
+}
+
+.arrow-container:hover .cta-arrow {
+    opacity: 0; /* Hide the regular arrow on hover */
+}
+
+.arrow-container:hover .cta-arrow-hover {
+    opacity: 1; /* Show the hover image on hover */
+}
+
+
 .about1-text{
     position: absolute;
     background-color: #fff;

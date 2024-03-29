@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
-import '../Hero/Hero.css';
+// import '../Hero/Hero.css';
 
 const Navbar = () => {
     const [isTop, setIsTop] = useState(true);
@@ -23,7 +23,7 @@ const Navbar = () => {
             <nav className={`navbar navbar-expand-lg p-0 ${!isTop ? 'sticky-top scrolled' : ''}`}>
                 <div className="container-fluid navbar-inner ">
                     <a className="navbar-brand" href="/">
-                        <img src="./logo.svg" alt="" />
+                        <img src="./inverted-logo.svg" alt="" />
                     </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>

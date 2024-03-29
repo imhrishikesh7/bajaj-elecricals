@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className='gradient-bg-footer flex'>
     <footer className="footer_area section_padding_130_0">
-      <div className="container">
+      <div className="container-footer">
         <div className="row">
           {/* Single Widget */}
           <div className="col-12 col-sm-6 col-lg-4">

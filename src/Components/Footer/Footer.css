@@ -7,7 +7,9 @@
 }
 .footer_area {
     /* position: absolute; */
-    
+    height: 90%;
+    /* border: 2px solid black; */
+    /* overflow: hidden; */
     background-color: #fff; /* Set background color to white */
     width: 100%; /* Set width to 100% */
     margin: auto ; /* Adjust margin as needed */
@@ -15,10 +17,12 @@
     z-index: 1;
     overflow-x: hidden; /* Hide horizontal overflow */
     box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
-    padding: 60px 0;
+    padding: 50px;
 }
 
 .single-footer-widget {
+    /* border: 2px solid black; */
+
     position: relative;
     z-index: 1;
     text-align: left;
@@ -36,7 +40,7 @@
 
 .single-footer-widget .copywrite-text a:hover,
 .single-footer-widget .copywrite-text a:focus {
-    color: #3f43fd;
+    color: rgba(41,57,144,1);
 }
 
 .single-footer-widget .widget-title {
@@ -55,7 +59,7 @@
 
 .single-footer-widget .footer_menu li a:hover,
 .single-footer-widget .footer_menu li a:focus {
-    color: #3f43fd;
+    color: rgba(41,57,144,1)
 }
 
 .single-footer-widget .footer_menu li:last-child a {

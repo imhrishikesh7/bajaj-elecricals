@@ -7,6 +7,7 @@
     transition: background-color 2s ease;
     display: flex;
     justify-content: center;
+    margin-bottom: 20%;
 }
 .nav-link {
     text-decoration: none;
@@ -29,7 +30,7 @@
     position: absolute;
     bottom: 0; /* Align the underline to the bottom of the text */
     bottom: 12px; /* Adjust the left positioning to center the underline */
-    background-color: #fff;
+    background-color: #0d68c9;
   }
   
 .nav-link:hover::before {
@@ -41,13 +42,16 @@
     width: 90%;
   }
 .navbar.scrolled {
-    background: linear-gradient(90deg, rgba(41,57,144,1) 41%, rgba(32,142,233,1) 100%);
+    background-color: #fff;
+    
+
+    /* background: linear-gradient(90deg, rgba(41,57,144,1) 41%, rgba(32,142,233,1) 100%); */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     margin: auto;
 }
 
 .navbar img {
-    height: 60px;
+        height: 60px;
 }
 
 
@@ -58,12 +62,15 @@
 
 .navbar .navbar-inner ul {
     text-align: center;
+    color: #0d68c9;
 
 }
 .ul1{
     margin: 0 auto;
     width: 600px;
     font-weight: 700;
+    color: #0d68c9;
+
 }
 
 .navbar .navbar-inner ul li:not(.btn2 ) {
@@ -74,11 +81,15 @@
     margin: auto;
     line-height: 2.5;
     justify-content: center;
+    color: #0d68c9;
+
 }
 
 .navbar .navbar-inner ul li a:not(.btn2 a) {
     font-size: 0.8rem;
-    color: #fff;
+    /* color: #fff; */
+    color: #0d68c9;
+
     letter-spacing: 0.1cqmin;
 }
 .navbar .navbar-inner .ul2 {
@@ -101,17 +112,18 @@
 .btn2{ 
     display: flex;
     background-color: #fff;
+    border: 1px solid #0d68c9;
     border-radius: 30px;   
     padding: 0px 20px;
     height: 40px;
     margin: auto;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .btn2:hover{ 
-    background-color: transparent;
-    border: 1.5px solid white;
+    background: linear-gradient(90deg, rgba(41,57,144,1) 41%, rgba(32,142,233,1) 100%);
+    /* border: 1.5px solid white; */
 }
 .btn2:hover .nav-link2{ 
     color: #fff;
@@ -126,4 +138,6 @@
     letter-spacing: 0.1cqmin;
     margin: auto;
     padding: 0;
+    transition: all 0.3s ease-in-out;
+
 }
