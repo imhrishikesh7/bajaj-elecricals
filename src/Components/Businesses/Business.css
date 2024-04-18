@@ -18,6 +18,9 @@
     width: 70px; /* Adjust as needed */
     /* height: 30px; Adjust as needed */
 }
+.icon-mono{
+    width: 10px;
+}
 .consumer-tag{
     position: absolute;
     display: inline-block;
@@ -44,23 +47,7 @@
     display: flex;
     align-items: center;
 }
-.overlay5 {
-    position: absolute;
-    top: 100%; /* Initially set to the bottom */
-    left: 0;
-    right: 0;
-    height: 0; /* Start with zero height */
-    width: 100%;
-    opacity: 0;
-    display: none;
-    border-radius: 28px;
-    background: linear-gradient(90deg, rgba(32, 142, 233, 1) 41%, rgba(41, 57, 144, 1) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .5s ease;
-    z-index: -1;
-}
+
 .overlay {
     position: absolute;
     top: 100%; /* Initially set to the bottom */
@@ -70,7 +57,7 @@
     width: 95%;
     opacity: 0;
     display: none;
-    border-radius: 28px;
+    border-radius: 18px;
     background: linear-gradient(90deg, rgba(32, 142, 233, 1) 41%, rgba(41, 57, 144, 1) 100%);
     display: flex;
     align-items: center;
@@ -88,41 +75,23 @@
     z-index: 1;
 
 }
-.overlay-container5:hover .overlay5 {
-    top: 0; /* Move overlay to the top on hover */
-    height: 100%; /* Expand the height of the overlay */
-    opacity: 1;
-    display: block;
-    z-index: 1;
 
-}
-
-.overlay-text:not(.overlay5 .overlay-text) {
+.overlay-text {
     display: flex;
     flex-direction: column;
     text-align: left;
     font-size: 20px;
     position: absolute;
-    /* border: 2px solid red; */
     width: 85%;
+    height: 80%;
     top: 50%;
+    /* transform: translateY(-50%); */
     left: 51%;
     transform: translate(-50%, -50%);
 }
-.overlay5 .overlay-text{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    font-size: 20px;
-    position: absolute;
-    /* border: 2px solid red; */
-    width: 90%;
-    top: 50%;
-    left: 49%;
-    transform: translate(-50%, -50%);
-}
+
 .overlay-text .icon-mono{
-    width: 80px;
+    width: 15%;
     margin: 10px 0 10px 0;
 }
 
