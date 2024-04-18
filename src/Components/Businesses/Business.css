@@ -1,0 +1,155 @@
+.business-row {
+    width: 90%;
+    margin: 1.5% auto;
+}
+.business-img{
+    /* height: 450px; */
+}
+.business-row .business-img{
+    width: 95%;
+    cursor: pointer;
+    /* position: relative; */
+}
+
+.consumer-icon {
+    position: absolute;
+    bottom: 20%;
+    left: 40px;
+    width: 70px; /* Adjust as needed */
+    /* height: 30px; Adjust as needed */
+}
+.consumer-tag{
+    position: absolute;
+    display: inline-block;
+    bottom: 6%;
+    left: 40px;
+    width: fit-content;
+    /* text-align: c; */
+    font-size: 21px;
+    color: #fff;
+}
+.overlay-container {
+    position: relative;
+    width: 48%;
+    margin: auto;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+.overlay-container5 {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+}
+.overlay5 {
+    position: absolute;
+    top: 100%; /* Initially set to the bottom */
+    left: 0;
+    right: 0;
+    height: 0; /* Start with zero height */
+    width: 100%;
+    opacity: 0;
+    display: none;
+    border-radius: 28px;
+    background: linear-gradient(90deg, rgba(32, 142, 233, 1) 41%, rgba(41, 57, 144, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease;
+    z-index: -1;
+}
+.overlay {
+    position: absolute;
+    top: 100%; /* Initially set to the bottom */
+    left: 0;
+    right: 0;
+    height: 0; /* Start with zero height */
+    width: 95%;
+    opacity: 0;
+    display: none;
+    border-radius: 28px;
+    background: linear-gradient(90deg, rgba(32, 142, 233, 1) 41%, rgba(41, 57, 144, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease;
+    z-index: -1;
+
+}
+
+.overlay-container:hover .overlay {
+    top: 0; /* Move overlay to the top on hover */
+    height: 100%; /* Expand the height of the overlay */
+    opacity: 1;
+    display: block;
+    z-index: 1;
+
+}
+.overlay-container5:hover .overlay5 {
+    top: 0; /* Move overlay to the top on hover */
+    height: 100%; /* Expand the height of the overlay */
+    opacity: 1;
+    display: block;
+    z-index: 1;
+
+}
+
+.overlay-text:not(.overlay5 .overlay-text) {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    position: absolute;
+    /* border: 2px solid red; */
+    width: 85%;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+}
+.overlay5 .overlay-text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    position: absolute;
+    /* border: 2px solid red; */
+    width: 90%;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+}
+.overlay-text .icon-mono{
+    width: 80px;
+    margin: 10px 0 10px 0;
+}
+
+.overlay-text h4 {
+    color: #fff;
+    margin: 10px 0;
+}
+
+.overlay-text p {
+    color: #fff;
+    font-size: 16px;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.overlay-text button {
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 2% 0 0 0;
+    padding: 0;
+    background: none;
+    align-items: center;
+}
+.overlay-text .arrow-right{
+    width: 20px;
+    margin: 0 0 0 10px;
+}
