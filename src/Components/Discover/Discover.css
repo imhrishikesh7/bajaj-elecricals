@@ -10,8 +10,8 @@
 
 .squared {
     position: absolute;
-    width: 70px; /* Adjust width of SVGs as needed */
-    height: 70px; /* Adjust height of SVGs as needed */
+    width: 3.5vw; 
+    height: 7vh;
     border-radius: 15%;
     background-color: #3498db; /* Adjust background color of SVGs as needed */
 }
@@ -74,8 +74,8 @@
 .bottom-right {
     bottom: 0;
     right: 0;
-    width: 100px;
-    height: 90px;
+    width: 5vw;
+    height: 9vh;
 }
 
 /* Style for hovered state */
