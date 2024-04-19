@@ -5,9 +5,14 @@
     margin: 5% auto;
 
 }
+.sus-container WaterWave{
+    height: 95vh;
+
+}
 .sus-container img{
     width: 100%;
-    /* height: 95vh; */
+    height: 100%;
+    image-rendering: pixelated;
 }
 .sus-wrapper{
     position: absolute;
