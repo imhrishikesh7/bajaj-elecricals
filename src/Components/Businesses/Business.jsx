@@ -245,7 +245,7 @@ const Business = ({ index }) => {
 
                 
                 <div className='overlay-container'>
-                    <img className='business-img' src="./Consumer.jpg" style={{borderRadius: "30px"}} alt="" />
+                    <img className='business-img' src="./Consumer.png" style={{borderRadius: "22px"}} alt="" />
                     <motion.img className='consumer-icon' src="./lamp-blue.svg" alt="" 
                     initial={{
                         opacity: 0,
@@ -287,7 +287,7 @@ const Business = ({ index }) => {
                     </div>
                 </div>
                 <div className='overlay-container'>
-                    <img className='business-img' src="./illuminated.jpg" alt="" style={{borderRadius: "30px"}} / >
+                    <img className='business-img' src="./illuminated.png" alt="" style={{borderRadius: "22px"}} / >
                     <motion.img className='consumer-icon' src="./morphy-blue.svg" alt="" 
                     initial={{
                         opacity: 0,
