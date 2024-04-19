@@ -15,12 +15,13 @@
     position: absolute;
     bottom: 20%;
     left: 40px;
-    width: 70px; /* Adjust as needed */
+    width: 15%;
+
     /* height: 30px; Adjust as needed */
 }
-.icon-mono{
+/* .icon-mono{
     width: 10px;
-}
+} */
 .consumer-tag{
     position: absolute;
     display: inline-block;
@@ -80,7 +81,7 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    font-size: 20px;
+    /* font-size: 25px; */
     position: absolute;
     width: 85%;
     height: 80%;
@@ -92,18 +93,19 @@
 
 .overlay-text .icon-mono{
     width: 15%;
-    margin: 10px 0 10px 0;
+    /* margin: 10px 0 10px 0; */
 }
 
 .overlay-text h4 {
     color: #fff;
     margin: 10px 0;
+    font-size: 1.5vw;
 }
 
 .overlay-text p {
     color: #fff;
-    font-size: 16px;
-    margin: 5px 0;
+    font-size: 1vw;
+    margin: 1% 0;
     text-align: left;
 }
 
@@ -111,7 +113,8 @@
     color: #fff;
     border: none;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 1vw;
+
     font-weight: 600;
     margin: 2% 0 0 0;
     padding: 0;
