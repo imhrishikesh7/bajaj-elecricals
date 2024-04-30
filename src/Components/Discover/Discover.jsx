@@ -4,6 +4,7 @@ import './Discover.css';
 
 const Discover = ({ index }) => {
     const [isHovered, setIsHovered] = useState(false);
+    const [spanPosition, setSpanPosition] = useState({ top: 0, left: 0 });
 
     const handleHover = () => {
         setIsHovered(true);
@@ -15,13 +16,33 @@ const Discover = ({ index }) => {
 
     // Random position generator for scattered elements
     const getRandomPosition = () => {
-        return `${Math.floor(Math.random() * 30)}%`;
+        return `${Math.floor(Math.random() * 0)}%`;
     };
 
+    // Logic for Position aware button start
+
+    const handleMouseEnter = (e) => {
+        const parentOffset = e.currentTarget.getBoundingClientRect();
+        const relX = e.clientX - parentOffset.left;
+        const relY = e.clientY - parentOffset.top;
+        setSpanPosition({ top: relY, left: relX });
+    };
+
+    const handleMouseOut = (e) => {
+        const parentOffset = e.currentTarget.getBoundingClientRect();
+        const relX = e.clientX - parentOffset.left;
+        const relY = e.clientY - parentOffset.top;
+        setSpanPosition({ top: relY, left: relX });
+    };
+
+    const handleAnchorClick = (e) => {
+        e.preventDefault();
+    };
+    // Logic for Position aware button end
     return (
         <div className='discover-sec' >
-            <div className='heading-bar-about flex'>
-                <div>
+            <div className='heading-bar-about'>
+                <div className='heading-bar-about-p2'>
                     <motion.h2 className='inter-medium about-heading2'
                         initial={{
                             opacity: 0,
@@ -69,8 +90,19 @@ const Discover = ({ index }) => {
                     }
                 }}
                 >
-                    Bajaj Electricals excels in consumer appliances and lighting <br />solutions. Their business portfolio includes a wide range of <br />innovative products loved by consumers across India.</motion.p>
+                    Bajaj Electricals excels in consumer appliances and lighting solutions. Their business portfolio includes a wide range of <br />innovative products loved by consumers across India.</motion.p>
             </div>
+            <a 
+                className="btn-posnawr"
+                href="#"
+                onMouseEnter={handleMouseEnter} 
+                onMouseOut={handleMouseOut}
+                onClick={handleAnchorClick}
+            >
+                Discover Jobs @ Bajaj
+                <span style={{ top: spanPosition.top, left: spanPosition.left }}></span>
+            </a>
+
         <div className="containerd" onMouseEnter={handleHover} onMouseLeave={handleMouseLeave}>
             
             {/* Squares initially scattered randomly */}
@@ -111,13 +143,13 @@ const Discover = ({ index }) => {
             <motion.img
                 src='/discover3.png'
                 className="imaged top-rightaa"
-                animate={{ x: isHovered ? '40%' : getRandomPosition(), y: isHovered ? '-25%' : getRandomPosition() }}
+                animate={{ x: isHovered ? '-58%' : getRandomPosition(), y: isHovered ? '-25%' : getRandomPosition() }}
                 transition={{ type: 'spring', stiffness: 90, damping: 15 }}
             ></motion.img>
               <motion.img
                 src='/discover4.png'
                 className="imaged top-rightaa2"
-                animate={{ x: isHovered ? '40%' : getRandomPosition(), y: isHovered ? '-60%' : getRandomPosition() }}
+                animate={{ x: isHovered ? '-25%' : getRandomPosition(), y: isHovered ? '-60%' : getRandomPosition() }}
                 transition={{ type: 'spring', stiffness: 90, damping: 15 }}
             ></motion.img>
             <motion.div

@@ -4,8 +4,8 @@ import { motion } from 'framer-motion'
 const Business = ({ index }) => {
     return (
         <div>
-            <div className='heading-bar-about flex'>
-                <div>
+            <div className='heading-bar-about'>
+                <div className='heading-bar-about-p2'>
                     <motion.h2 className='inter-medium about-heading2'
                         initial={{
                             opacity: 0,
@@ -53,7 +53,7 @@ const Business = ({ index }) => {
                     }
                 }}
                 >
-                    Bajaj Electricals excels in consumer appliances and lighting <br />solutions. Their business portfolio includes a wide range of <br />innovative products loved by consumers across India.</motion.p>
+                    Bajaj Electricals excels in consumer appliances and lighting solutions. Their business portfolio includes a wide range of <br />innovative products loved by consumers across India.</motion.p>
             </div>
             <motion.div className='flex business-row'
             initial={{ opacity: 0, y: 100 }}
