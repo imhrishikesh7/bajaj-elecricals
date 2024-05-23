@@ -4,8 +4,21 @@
 .containerd {
     position: relative;
     width: 60%; /* Adjust width as needed */
-    height: 60vh; /* Adjust height as needed */
+    height: 60vh; 
     margin: 5% auto;
+}
+.containerd-about{
+    position: absolute;
+    width: 100%; /* Adjust width as needed */
+    height: 100%; 
+    margin: 5% auto;
+    z-index: 1;
+}
+.ct2{
+    position: relative;
+    width: 97%; /* Adjust width as needed */
+    margin: 5% auto;
+    height: 60vh; /* Adjust height as needed */
 
 }
 
@@ -24,12 +37,21 @@
 .top-left {
     top: 0;
     left: 0;
-    background-color: #84baec; 
-    
+    background-color: #84baec;   
+}
+.top-left-about{
+    top: -20%;
+    left: 0;
+    background-color: #84baec;    
 }
 .top-lefta {
     top: 0;
     left: 7%;
+    background-color: #0f68c9; 
+}
+.top-lefta-about{
+    top: 0;
+    left: -6%;
     background-color: #0f68c9; 
 }
 .top-leftaa {
@@ -68,13 +90,21 @@
 .top-right {
     top: 0;
     background-color: #b8daf4; 
-
     right: 0;
 }
-
+.top-right-about{
+    top: 5%;
+    background-color: #b8daf4; 
+    left: 99%;
+}
 .bottom-left {
     bottom: 0;
     left: 0;
+}
+.bottom-left2 {
+    bottom: 5%;
+    left: 10%;
+    background-color: #b8daf4; 
 }
 
 .bottom-right {
@@ -82,9 +112,13 @@
     right: 0;
     width: 5vw;
     height: 9vh;
-
 }
-
+.bottom-right-about{
+    top: 101%;
+    right: 0;
+    width: 5vw;
+    height: 9vh;
+}
 /* Style for hovered state */
 
 .btn-posnawr {
@@ -129,7 +163,9 @@
   .btn-posnawr:active {
     background-color: #0f68c9;
   }
-  
+  .sq{
+    opacity: 0.5;
+  }
 
 
 /* JOBS BUTTON CSS END */

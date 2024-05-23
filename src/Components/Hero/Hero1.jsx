@@ -4,6 +4,8 @@ import './Hero1.css'
 // import Navbar from '../Navbar/Navbar'
 import Carousel from 'react-bootstrap/Carousel';
 import { motion, useScroll, useTransform } from 'framer-motion'
+import DynamicElements from '../Dynamic elements/DynamicElements';
+import Discover2 from '../Discover/Discover2';
 
 
 const Hero1 = ({ index }) => {
@@ -20,6 +22,9 @@ const Hero1 = ({ index }) => {
     return (
         <div ref={container} className='hero-container'>
             <motion.div style={{ scale: scaleIt }} className='curved-hero flex'>
+                <div className='elements-wrap'>
+                    <Discover2/>
+                </div>
                 <motion.div style={{ scale: scaleIt2 }} className='hero-content animate'>
                     <motion.h1 className='inter-medium'
                         initial={{
