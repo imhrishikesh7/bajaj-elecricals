@@ -4,7 +4,6 @@ import './Hero1.css'
 // import Navbar from '../Navbar/Navbar'
 import Carousel from 'react-bootstrap/Carousel';
 import { motion, useScroll, useTransform } from 'framer-motion'
-import DynamicElements from '../Dynamic elements/DynamicElements';
 import Discover2 from '../Discover/Discover2';
 
 

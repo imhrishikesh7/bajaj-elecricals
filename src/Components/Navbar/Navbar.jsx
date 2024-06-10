@@ -22,9 +22,9 @@ const Navbar = () => {
             <div className={`navbar-margin ${isTop ? 'visible' : ''}`} />
             <nav className={`navbar navbar-expand-lg p-0 ${!isTop ? 'sticky-top scrolled' : ''}`}>
                 <div className="container-fluid navbar-inner">
-                    <a className="navbar-brand" href="/">
+                    <Link className="navbar-brand" to="/">
                         <img src="./inverted-logo.svg" alt="" />
-                    </a>
+                    </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -34,24 +34,24 @@ const Navbar = () => {
                                 <Link className="nav-link nav-link-ltr" aria-current="page" to="/about">About Us</Link>
                             </li>
                             <li className="nav-item ">
-                                <a className="nav-link nav-link-ltr" href="/">Sustainability</a>
+                                <Link className="nav-link nav-link-ltr" to="/esg">Sustainability</Link>
                             </li>
                             <li className="nav-item ">
-                                <a className="nav-link nav-link-ltr" href="/">Brands & Business</a>
+                                <Link className="nav-link nav-link-ltr" to="/brands-business">Brands & Business</Link>
                             </li>
                             <li className="nav-item ">
-                                <a className="nav-link nav-link-ltr" href="/">Investors</a>
+                                <Link className="nav-link nav-link-ltr" to="/">Investors</Link>
                             </li>
                             <li className="nav-item ">
-                                <a className="nav-link nav-link-ltr" href="/">Media</a>
+                                <Link className="nav-link nav-link-ltr" to="/">Media</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link nav-link-ltr" href="/">Career</a>
+                                <Link className="nav-link nav-link-ltr" to="/">Career</Link>
                             </li>
                         </ul>
                         <ul className="navbar-nav inter-bold mb-2 mb-lg-0 ul2">
                             <li className="nav-item btn2">
-                                <a className="nav-link2" href="/">Contact Us</a>
+                                <Link className="nav-link2" to="/">Contact Us</Link>
                             </li>
                         </ul>
                     </div>
